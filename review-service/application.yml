@@ -6,7 +6,7 @@ spring:
     name: review-service
   data:
     mongodb:
-      uri: mongodb://localhost:27017/e-commerce-platform-review-service
+      uri: mongodb://mongo:27017/e-commerce-platform-review-service
 
 grpc:
   server:
