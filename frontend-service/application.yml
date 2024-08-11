@@ -51,7 +51,7 @@ spring:
     notifications-topic: "notifications-topic"
 
 keycloak:
-  server-url: http://keycloak:8080
+  server-url: http://localhost:8080
   realm: e-commerce-platform
   web-registration-name: "keycloak-web" # taken from "security.oauth2.client.registration.<>"
 
@@ -79,4 +79,4 @@ review-service:
     port: 9090
 
 notification-service:
-  enabled: true
+  enabled: false
