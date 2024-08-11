@@ -7,14 +7,14 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://localhost:27017/e-commerce-platform-order-service
+      uri: mongodb://mongo:27017/e-commerce-platform-order-service
 
   graphql:
     graphiql:
       enabled: true
 
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     topicExchange: e-commerce-platform-order-service-exchange
     queues:
       order-create: order.create.queue

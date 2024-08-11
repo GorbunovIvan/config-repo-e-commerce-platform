@@ -39,7 +39,7 @@ spring:
             user-name-attribute: preferred_username
 
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     topicExchange: e-commerce-platform-order-service-exchange
     queues:
       order-create: order.create.queue
@@ -64,16 +64,16 @@ user-service:
   url: http://api-gateway:8765/user-service/api/v1/users
 
 product-service:
-  enabled: true
+  enabled: false
   name: product-service
   url: http://api-gateway:8765/product-service/api/v1/products
 
 order-service:
-  enabled: false
+  enabled: true
   graphql-url: http://api-gateway:8765/order-service/graphql
 
 review-service:
-  enabled: true
+  enabled: false
   grpc:
     host: localhost
     port: 9090
